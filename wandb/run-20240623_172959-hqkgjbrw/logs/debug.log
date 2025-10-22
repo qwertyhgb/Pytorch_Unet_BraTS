@@ -1,0 +1,28 @@
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Current SDK version is 0.17.2
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Configure stats pid to 16692
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30533\.config\wandb\settings
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\settings
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'c:\\Users\\30533\\Desktop\\Pytorch-UNet-master\\train.py', 'program': 'c:/Users/30533/Desktop/Pytorch-UNet-master/train.py'}
+2024-06-23 17:29:59,869 INFO    MainThread:16692 [wandb_setup.py:_flush():76] Applying login settings: {'anonymous': 'must'}
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:_log_setup():520] Logging user logs to C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\run-20240623_172959-hqkgjbrw\logs\debug.log
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:_log_setup():521] Logging internal logs to C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\run-20240623_172959-hqkgjbrw\logs\debug-internal.log
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:init():560] calling init triggers
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:init():610] starting backend
+2024-06-23 17:29:59,870 INFO    MainThread:16692 [wandb_init.py:init():614] setting up manager
+2024-06-23 17:29:59,872 INFO    MainThread:16692 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-06-23 17:29:59,875 INFO    MainThread:16692 [wandb_init.py:init():622] backend started and connected
+2024-06-23 17:29:59,882 INFO    MainThread:16692 [wandb_init.py:init():711] updated telemetry
+2024-06-23 17:29:59,884 INFO    MainThread:16692 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-06-23 17:30:01,105 INFO    MainThread:16692 [wandb_run.py:_on_init():2402] communicating current version
+2024-06-23 17:30:06,109 INFO    MainThread:16692 [wandb_run.py:_on_init():2411] got version response 
+2024-06-23 17:30:06,110 INFO    MainThread:16692 [wandb_init.py:init():795] starting run threads in backend
+2024-06-23 17:30:08,613 INFO    MainThread:16692 [wandb_run.py:_console_start():2380] atexit reg
+2024-06-23 17:30:08,614 INFO    MainThread:16692 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-06-23 17:30:08,614 INFO    MainThread:16692 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-06-23 17:30:08,614 INFO    MainThread:16692 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-06-23 17:30:08,616 INFO    MainThread:16692 [wandb_init.py:init():838] run started, returning control to user process
+2024-06-23 17:30:08,616 INFO    MainThread:16692 [wandb_run.py:_config_callback():1382] config_cb None None {'epochs': 5, 'batch_size': 1, 'learning_rate': 1e-05, 'val_percent': 0.1, 'save_checkpoint': True, 'img_scale': 0.5, 'amp': False}

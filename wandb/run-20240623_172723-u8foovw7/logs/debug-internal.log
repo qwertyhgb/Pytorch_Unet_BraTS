@@ -1,0 +1,62 @@
+2024-06-23 17:27:23,703 INFO    StreamThr :21968 [internal.py:wandb_internal():85] W&B internal server running at pid: 21968, started at: 2024-06-23 17:27:23.702068
+2024-06-23 17:27:23,705 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: status
+2024-06-23 17:27:23,713 INFO    WriterThread:21968 [datastore.py:open_for_write():87] open: C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\run-20240623_172723-u8foovw7\run-u8foovw7.wandb
+2024-06-23 17:27:23,714 DEBUG   SenderThread:21968 [sender.py:send():379] send: header
+2024-06-23 17:27:23,715 DEBUG   SenderThread:21968 [sender.py:send():379] send: run
+2024-06-23 17:27:23,718 INFO    SenderThread:21968 [sender.py:_setup_resume():749] checking resume status for None/U-Net/u8foovw7
+2024-06-23 17:27:27,655 INFO    SenderThread:21968 [retry.py:__call__():172] Retry attempt failed:
+urllib3.exceptions.SSLError: TLS/SSL connection has been closed (EOF) (_ssl.c:1135)
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1135)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1135)'))))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\wandb\sdk\internal\internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Anaconda3\envs\U-net\lib\site-packages\requests\adapters.py", line 616, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1135)'))))
+2024-06-23 17:27:28,749 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:33,786 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:38,820 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:43,858 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:48,895 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:53,915 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:27:58,962 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:04,014 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:09,057 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:14,095 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:19,122 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:24,180 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:29,212 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:34,256 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:39,374 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-23 17:28:44,321 DEBUG   HandlerThread:21968 [handler.py:handle_request():158] handle_request: keepalive

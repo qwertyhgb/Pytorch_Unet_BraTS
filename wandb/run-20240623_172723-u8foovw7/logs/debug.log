@@ -1,0 +1,19 @@
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Current SDK version is 0.17.2
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Configure stats pid to 22124
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30533\.config\wandb\settings
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\settings
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-23 17:27:23,697 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'c:\\Users\\30533\\Desktop\\Pytorch-UNet-master\\train.py', 'program': 'c:/Users/30533/Desktop/Pytorch-UNet-master/train.py'}
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_setup.py:_flush():76] Applying login settings: {'anonymous': 'must'}
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:_log_setup():520] Logging user logs to C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\run-20240623_172723-u8foovw7\logs\debug.log
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:_log_setup():521] Logging internal logs to C:\Users\30533\Desktop\Pytorch-UNet-master\wandb\run-20240623_172723-u8foovw7\logs\debug-internal.log
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:init():560] calling init triggers
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:init():610] starting backend
+2024-06-23 17:27:23,698 INFO    MainThread:22124 [wandb_init.py:init():614] setting up manager
+2024-06-23 17:27:23,701 INFO    MainThread:22124 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-06-23 17:27:23,704 INFO    MainThread:22124 [wandb_init.py:init():622] backend started and connected
+2024-06-23 17:27:23,712 INFO    MainThread:22124 [wandb_init.py:init():711] updated telemetry
+2024-06-23 17:27:23,714 INFO    MainThread:22124 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
